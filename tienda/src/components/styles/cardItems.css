@@ -1,0 +1,94 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cardItems{
+    background-color: #fff;
+    color: black;
+    height: 400px;
+    width: 260px;
+    padding: 10px;
+    margin: 20px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Cart Imagen */
+
+.cardItems .cardImg{
+    display: flex;
+    justify-content: center;
+    height: 50%;
+}
+
+.cardItems .cardImg img{
+    width: 100%;
+}
+
+/* Card Descripcion */
+
+.cardDescription{
+ display: flex;
+ flex-direction: column;   
+ height: 35%;
+ 
+}
+
+.cardDescription .description{
+    display: none;
+}
+
+
+.cardDescription .cant{
+    font-size: 11px;
+    margin: 3px 0px;
+}
+
+.cardDescription .title{
+    font-size: 21px;
+    margin: 5px 0px;
+}
+
+.cardDescription .price{ 
+    font-size: 32px;
+    font-weight: bold;
+    margin: 5px 0px;
+}
+
+/* Container Buttons */
+
+.buttons{
+    height: 15%;    
+    width: 200px;
+}
+
+.buttons #details{
+    height: 80%;
+    width: 70%;
+    border-radius: 50px;
+    background-color: black;
+    color: #fff;
+    font-size: 12px;
+    border: none;
+}
+
+.buttons #details:hover{
+    background-color: #fff;
+    color: black;
+    border: 1px solid black;
+    transition: 0.5s;
+}
+
+.buttons #AddCart{
+    background-color: black;
+    border: noen;
+    height: 70%;
+    width: 20%;
+    border-radius: 50%;
+    margin-inline:5px;
+}
+
