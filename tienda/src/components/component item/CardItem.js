@@ -3,17 +3,16 @@ import Image from "./Image";
 import Description from "./Description";
 import ButtonDetail from "./ButtonDetail";
 import ButtonAddCart from "./ButtonAddCart";
-import ImgPrueba from "../img/placa.svg"
 
 
-const CardItem = () =>{
+const CardItem = (props) =>{
     return(
         <div className="cardItems">
-            <Image imagen={ImgPrueba} ></Image>
+            <Image imagen={props.imagen} ></Image>
             <Description 
-            title="Placa de vídeo asus ROG strix rtx 3080 "
-            cant={5}
-            prices={250000}
+            title={props.title}
+            cant={props.cant}
+            prices={props.prices}
             ></Description>
             <div className="buttons">
                 <ButtonDetail></ButtonDetail>
